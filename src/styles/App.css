@@ -13,16 +13,16 @@
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--section-bgd);
+	background: var(--brick);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--nav-blue);
+	background: var(--brick);
 	border-radius: 100vh;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--nav-blue-shade);
+	background: var(--brick);
 }
 
 .Toastify__container {
@@ -35,22 +35,22 @@
 
 body {
 	overflow-x: hidden;
-  background: var(--section-bgd);
+  background: var(--brick);
 }
 
 :root {
-	--nav-grey: #a8a9b4;
-	--nav-deep-grey: #94959b;
-	--nav-blue: #149ddd;
-	--nav-blue-shade: #0e668f;
-	--card-blue-shade: #112240;
-	--nav-deep-blue: #2c2f3f;
-	--nav-bgd: #040b14;
-	--white: #fff;
-	--soft-white: #ccd6f6;
-	--navy: #0a192f;
-	--light-blue: rgb(156, 183, 255);
-	--section-bgd: #00021a;
+	--beige: #e0ddd5;        /* Light beige for text */
+	--deep-grey: #2e3546;   /* Dark blue-grey for secondary text */
+	--blue: #283d70;        /* Navy blue as primary color */
+	--brick: #703529;  /* Deep red for hover states */
+	--deep-grey: #2e3546; /* Dark blue-grey for cards */
+	--blue: #283d70;   /* Navy blue for navigation */
+	--deep-grey: #2e3546;         /* Dark blue-grey for backgrounds */
+	--beige: #e0ddd5;           /* Light beige instead of pure white */
+	--beige: #e0ddd5;      /* Light beige for soft text */
+	--blue: #283d70;            /* Navy blue */
+	--gold: #c6934b;      /* Gold as accent color */
+	--deep-grey: #2e3546;     /* Dark blue-grey for section backgrounds */
 }
 
 /* General styles */
@@ -59,8 +59,8 @@ body {
 .services,
 .works,
 .contact {
-	background-color: var(--section-bgd);
-	color: var(--nav-grey);
+	background-color: var(--brick);
+	color: var(--brick);
 	width: 100%;
 }
 
@@ -109,7 +109,7 @@ body {
 	stroke-dashoffset: -474;
 	stroke-width: 8px;
 	fill: transparent;
-	stroke: #149ddd;
+	stroke: var(--brick);
 	border: 5px solid black;
 	animation: 3s ease 0s 1 pageLoad;
 }
@@ -118,9 +118,9 @@ body {
 	text-transform: uppercase;
 	line-height: 32px;
 	letter-spacing: 8px;
-	color: #fff;
+	color: var(--beige);
 	position: absolute;
-	left: 20px;
+	left: 30px;
 	top: 10px;
 	width: 100%;
 	transform: translate(-50% -50%);

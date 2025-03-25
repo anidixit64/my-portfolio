@@ -15,8 +15,8 @@
 }
 
 .works-card {
-	background-color: var(--card-blue-shade);
-	color: var(--nav-grey);
+	background-color: var(--brick);
+	color: var(--brick);
 	border-radius: 5px;
 	position: relative;
 	padding: 1rem 2rem;
@@ -37,7 +37,7 @@
 }
 
 .works-card:hover .work-title {
-	color: var(--nav-blue);
+	color: var(--brick);
 }
 
 .top-work {
@@ -73,12 +73,12 @@
 
 .work-folder {
 	font-size: 2rem;
-	color: var(--nav-blue);
+	color: var(--brick);
 }
 
 .work-git,
 .work-link {
-	color: var(--nav-grey);
+	color: var(--brick);
 	margin: 0 0.5rem;
 	font-size: 1.5rem;
 	display: flex;
@@ -87,7 +87,7 @@
 }
 .work-git:hover,
 .work-link:hover {
-	color: var(--nav-blue);
+	color: var(--brick);
 }
 
 .bottom-work {
@@ -113,8 +113,8 @@
   .tab {
 	padding: 0.5rem 1rem;
 	margin: 0 0.5rem;
-	background-color: var(--card-blue-shade);
-	color: var(--nav-grey);
+	background-color: var(--brick);
+	color: var(--brick);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -124,12 +124,12 @@
   }
   
   .tab:hover {
-	background-color: var(--nav-blue);
+	background-color: var(--brick);
 	color: white;
   }
   
   .tab.active {
-	background-color: var(--nav-blue);
+	background-color: var(--brick);
 	color: white;
   }
   

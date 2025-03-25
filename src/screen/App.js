@@ -28,10 +28,10 @@ function App() {
     loading ? 
     <div className="loader">
       <div className="svg-wrapper">
-        <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
-          <rect className="shape" height="60" width="320" />
+        <svg height="65" width="240" xmlns="http://www.w3.org/2000/svg">
+          <rect className="shape" height="65" width="230" />
         </svg>        
-        <motion.p variants={loadText} initial='hidden' animate='visible' className="text">Peace Jinadu-Paul</motion.p>
+        <motion.p variants={loadText} initial='hidden' animate='visible' className="text" style={{ color: 'var(--brick)' }}>Aniket Dixit</motion.p>
       </div>
     </div>
     :

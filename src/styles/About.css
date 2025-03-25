@@ -4,11 +4,11 @@
 }
 
 .heading-sub-text {
-    color: var(--soft-white);
+    color: var(--brick);
 }
 
 .heading-text {
-    color: var(--soft-white);
+    color: var(--brick);
     font-size: 2.5rem;
 }
 

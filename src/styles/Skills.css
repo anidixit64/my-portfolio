@@ -9,8 +9,8 @@
     padding: 1rem;
     width: 80%;
     margin: 0 auto;
-    /* border: 1px solid var(--nav-blue); */
-    color: var(--nav-blue);
+    border: 1px solid var(--brick);
+    color: var(--brick);
     cursor: pointer;
     border-radius: 5px;
     display: flex;
@@ -23,6 +23,7 @@
 .skill-icon {
     font-size: 2rem;
     margin-bottom: .5rem;
+    color: inherit;
 }
 
 .skill-desc {

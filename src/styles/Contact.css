@@ -25,21 +25,21 @@
 }
 
 .hello-links {
-	color: var(--nav-blue-shade);
+	color: var(--brick);
 	margin: 0.5rem 0;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
 }
 
 .hello-links:hover {
-	color: var(--nav-blue);
+	color: var(--brick);
 }
 
 /* Form */
 .right-box {
 	width: 90%;
 	margin: 0 auto;
-	color: var(--white);
+	color: var(--brick);
 	font-size: 80%;
 }
 
@@ -73,10 +73,10 @@ textarea {
 	background-color: transparent !important;
 	border: 0;
 	outline: none;
-	border-bottom: 1px solid var(--white);
+	border-bottom: 1px solid var(--brick);
 	padding-bottom: 0.5rem;
 	word-wrap: break-word;
-	color: var(--white);
+	color: var(--brick);
 }
 
 input:-webkit-autofill,

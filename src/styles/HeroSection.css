@@ -6,7 +6,7 @@
 	background-position: center;
 	background-size: cover;
 	width: 100%;
-	color: var(--white);
+	color: var(--brick);
 	height: 100vh;
 	padding: 3rem 6rem;
 	display: flex;
@@ -21,7 +21,7 @@
 	height: 100vh;
 	width: 100%;
 	background-color: black;
-	filter: opacity(0.8);
+	filter: opacity(0.835);
 }
 
 .hero-content {
@@ -33,7 +33,7 @@
 .hero-intro {
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
-	color: var(--nav-blue);
+	color: var(--brick);
 	display: flex;
 	flex-direction: column;
 }
@@ -43,16 +43,17 @@
 	font-size: 1.2rem;
 	font-family: "Poppins", sans-serif;
 	font-weight: 100;
+	color: var(--beige);
 }
 
 .hero-contact {
 	text-decoration: none;
-	color: var(--nav-blue);
-  font-size: 80%;
+	color: var(--brick);
+  	font-size: 80%;
 	font-weight: 500;
 	letter-spacing: 3px;
 	padding: 1rem 2rem;
-	border: 1px solid var(--nav-blue);
+	border: 1px solid var(--gold);
 	background-color: transparent;
 	width: fit-content;
 	border-radius: 4px;
@@ -67,7 +68,7 @@
 }
 
 .hero-contact::after {
-	background-color: var(--nav-blue);
+	background-color: var(--brick);
 	content: "";
 	display: block;
 	height: 100%;
@@ -87,7 +88,7 @@
 }
 
 .hero-contact:hover {
-	color: var(--white);
+	color: var(--beige);
 	will-change: transform;
 }
 
@@ -106,21 +107,22 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 3px solid var(--nav-blue);
+	border: 3px solid var(--gold);
 	border-radius: 50%;
 	transition: all 0.4s ease;
 	z-index: 50;
-	background-color: var(--nav-blue);
+	background-color: var(--brick);
 }
 
 .menu-icon {
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
+	color: var(--beige)
 }
 
 .menu-icon:hover {
-	background-color: var(--nav-blue-shade);
+	background-color: var(--gold);
 }
 
 .cv-icon {
@@ -134,7 +136,7 @@
 }
 
 .to-top-icon:hover {
-	background-color: var(--nav-blue-shade);
+	background-color: var(--brick);
 }
 
 .show {
@@ -183,6 +185,6 @@
 	.to-top-icon {
 		font-size: 1rem;
 		padding: 0.6rem;
-		background-color: var(--nav-blue);
+		background-color: var(--brick);
 	}
 }

@@ -1,37 +1,40 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import '../styles/App.css';
 import { motion } from "framer-motion";
 import HomePage from "../pages/HomePage";
 
 function App() {
-  // States
   const [loading, setLoading] = useState(true);
+  const [showShimmer, setShowShimmer] = useState(false);
+
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000)
+    const loadTimer = setTimeout(() => setLoading(false), 2250);
+    const shimmerTimer = setTimeout(() => setShowShimmer(true), 2000);
+
+    return () => {
+      clearTimeout(loadTimer);
+      clearTimeout(shimmerTimer);
+    };
   }, []);
-
-  const loadText = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition:{
-        duration: 1
-      }
-    }
-  }
-
 
   return (
     loading ? 
     <div className="loader">
-      <div className="svg-wrapper">
-        <svg height="65" width="240" xmlns="http://www.w3.org/2000/svg">
-          <rect className="shape" height="65" width="230" />
-        </svg>        
-        <motion.p variants={loadText} initial='hidden' animate='visible' className="text" style={{ color: 'var(--brick)' }}>Aniket Dixit</motion.p>
+      <div className="wreath-loader">
+        <img
+          src="/laurel-wreath.svg"
+          alt="Laurel Wreath"
+          className="wreath-background"
+        />
+        <motion.h1
+          className={`etched-name ${showShimmer ? 'shimmer-active' : ''}`}
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.4 }}
+        >
+          ANIKET DIXIT
+        </motion.h1>
       </div>
     </div>
     :

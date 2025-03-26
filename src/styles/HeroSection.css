@@ -20,12 +20,12 @@
 	position: absolute;
 	height: 100vh;
 	width: 100%;
-	background-color: black;
-	filter: opacity(0.835);
+	background-color: var(--deep-grey);
+	filter: opacity(0.9);
 }
 
 .hero-content {
-	font-family: "Lato", sans-serif;
+	font-family: 'Cinzel', serif;
 	margin-bottom: 2rem;
 	width: fit-content;
 }
@@ -33,27 +33,28 @@
 .hero-intro {
 	font-size: 4rem;
 	margin-bottom: 0.5rem;
-	color: var(--brick);
+	color: var(--gold);
 	display: flex;
 	flex-direction: column;
+	font-family: 'Cinzel', serif;
 }
 
 .hero-desc,
 .hero-desc-sub {
-	font-size: 1.2rem;
-	font-family: "Poppins", sans-serif;
+	font-size: 1.5rem;
+	font-family: 'Cinzel', serif;
 	font-weight: 100;
 	color: var(--beige);
 }
 
 .hero-contact {
 	text-decoration: none;
-	color: var(--brick);
-  	font-size: 80%;
+	color: var(--beige);
+  	font-size: 1rem;
 	font-weight: 500;
 	letter-spacing: 3px;
 	padding: 1rem 2rem;
-	border: 1px solid var(--gold);
+	border: 3px solid var(--gold);
 	background-color: transparent;
 	width: fit-content;
 	border-radius: 4px;
@@ -62,6 +63,7 @@
 	transition: 0.4s transform ease-in-out;
 	will-change: transform;
 	display: flex;
+	font-family: 'Cinzel', serif;
 	flex-direction: row;
 	align-items: center;
 	cursor: pointer;

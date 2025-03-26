@@ -1,145 +1,108 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;500&family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
+/* Global Reset */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
 }
 
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
-	width: 6px;
-	height: 8px;
+  width: 6px;
+  height: 8px;
 }
-
-::-webkit-scrollbar-track {
-	background: var(--brick);
-}
-
-::-webkit-scrollbar-thumb {
-	background: var(--brick);
-	border-radius: 100vh;
-}
-
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--brick);
+  background: var(--brick);
+  border-radius: 100vh;
 }
 
-.Toastify__container {
-    z-index: 9999 !important;
+/* Root Color Palette */
+:root {
+  --beige: #e0ddd5;
+  --deep-grey: #2e3546;
+  --blue: #283d70;
+  --brick: #703529;
+  --gold: #c6934b;
+  --green: #283618;
 }
 
-.Toastify__toast-container {
-    z-index: 9999 !important;
-}
-
+/* Body Background */
 body {
-	overflow-x: hidden;
+  overflow-x: hidden;
   background: var(--brick);
 }
 
-:root {
-	--beige: #e0ddd5;        /* Light beige for text */
-	--deep-grey: #2e3546;   /* Dark blue-grey for secondary text */
-	--blue: #283d70;        /* Navy blue as primary color */
-	--brick: #703529;  /* Deep red for hover states */
-	--deep-grey: #2e3546; /* Dark blue-grey for cards */
-	--blue: #283d70;   /* Navy blue for navigation */
-	--deep-grey: #2e3546;         /* Dark blue-grey for backgrounds */
-	--beige: #e0ddd5;           /* Light beige instead of pure white */
-	--beige: #e0ddd5;      /* Light beige for soft text */
-	--blue: #283d70;            /* Navy blue */
-	--gold: #c6934b;      /* Gold as accent color */
-	--deep-grey: #2e3546;     /* Dark blue-grey for section backgrounds */
+/* Toast Z-Index */
+.Toastify__container,
+.Toastify__toast-container {
+  z-index: 9999 !important;
 }
 
-/* General styles */
-.about,
-.skills,
-.services,
-.works,
-.contact {
-	background-color: var(--brick);
-	color: var(--brick);
-	width: 100%;
-}
-
-.container {
-	padding: 4rem;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
+/* Loader Background */
 .loader {
-	background-color: #00021a;
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
+  background-color: var(--deep-grey);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.loader-icon {
-	color: #fff;
-	height: 100;
-	width: 50;
+/* Roman Name Styling */
+.etched-name {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-align: center;
+  background: linear-gradient(to right, #c6934b, #906831);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/*  Load animations */
-.svg-wrapper {
+/* Optional shimmer effect on the text only */
+.shimmer-active {
+  animation: shimmer 2s infinite;
+}
+
+.wreath-loader {
 	position: relative;
-}
-
-@keyframes pageLoad {
-	0% {
-		stroke-dasharray: 140 540;
-		stroke-dashoffset: -474;
-		stroke-width: 8px;
-	}
-	100% {
-		stroke-width: 2px;
-		stroke-dashoffset: 0;
-		stroke-dasharray: 760;
-	}
-}
-.shape {
-	stroke-dasharray: 140 540;
-	stroke-dashoffset: -474;
-	stroke-width: 8px;
-	fill: transparent;
-	stroke: var(--brick);
-	border: 5px solid black;
-	animation: 3s ease 0s 1 pageLoad;
-}
-.text {
-	font-size: 16px;
-	text-transform: uppercase;
-	line-height: 32px;
-	letter-spacing: 8px;
-	color: var(--beige);
+	width: 320px;
+	height: 320px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .wreath-background {
 	position: absolute;
-	left: 30px;
-	top: 10px;
 	width: 100%;
-	transform: translate(-50% -50%);
-}
+	height: 100%;
+	opacity: 0.15; /* adjust transparency */
+	object-fit: contain;
+	z-index: 0;
+  }
+  
+  .etched-name {
+	z-index: 1;
+	font-size: 26px;
+  }  
 
-@media screen and (max-width: 700px) {
-	.container {
-		padding: 3rem;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	.text {
-		font-size: 13px;
-		position: absolute;
-		left: 40px;
-		top: 10px;
-	}
-	.container {
-		padding: 1rem;
-	}
+/* Glowing Shimmer Animation */
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 5px rgba(198, 147, 75, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(198, 147, 75, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(198, 147, 75, 0.2);
+  }
 }

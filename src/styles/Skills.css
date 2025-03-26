@@ -1,3 +1,18 @@
+.heading-text {
+    color: var(--gold);
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    position: relative;
+    display: inline-block;
+}
+
+.heading {
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1rem;
+    text-align: left;
+    margin-left: 50px;
+}
+
 .skills-box {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -9,8 +24,8 @@
     padding: 1rem;
     width: 80%;
     margin: 0 auto;
-    border: 1px solid var(--brick);
-    color: var(--brick);
+    border: 1px solid var(--gold);
+    color: var(--gold);
     cursor: pointer;
     border-radius: 5px;
     display: flex;

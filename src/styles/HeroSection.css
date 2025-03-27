@@ -45,6 +45,10 @@
 	font-family: 'Cinzel', serif;
 	font-weight: 100;
 	color: var(--beige);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
 }
 
 .hero-contact {

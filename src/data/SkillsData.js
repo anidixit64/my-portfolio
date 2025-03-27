@@ -1,92 +1,86 @@
-import { DiJavascript1 } from "react-icons/di";
 import {
-	FaCss3Alt,
-	FaFigma,
-	FaGithub,
 	FaHtml5,
 	FaReact,
-	FaSass
+	FaJava,
+	FaPython,
+	FaDocker,
+	FaGithub
 } from "react-icons/fa";
-import { RiVuejsLine } from "react-icons/ri";
-import {
-	SiAdobephotoshop,
-	SiFirebase,
-	SiFramer,
-	SiNextdotjs,
-	SiRedux,
-	SiStyledcomponents,
-	SiTailwindcss,
-	SiTypescript
-} from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
+import { DiJavascript1, DiPostgresql, DiSqllite, DiRedis } from "react-icons/di";
+import { SiPytorch, SiFlask, SiTensorflow, SiTableau, SiPrometheus, SiCplusplus, SiScikitlearn} from "react-icons/si";
+import { VscTerminalBash} from "react-icons/vsc";
 
 export const SkillsData = [
 	{
+		name: "Python",
+		icon: <FaPython style={{ color: "#3776AB" }} />,
+	},
+	{
+		name: "Java",
+		icon: <FaJava style= {{color: "#007396"}} />,
+	},
+	{
+		name: "C++",
+		icon: <SiCplusplus style= {{color: "#00599C"}} />,
+	},
+	{
+		name: "SQL",
+		icon: <DiSqllite style= {{color: "#4479A1"}} />,
+	},
+	{
+		name: "PostgreSQL",
+		icon: <DiPostgresql style= {{color: "#336791"}} />,
+	},
+	{
+		name: "Redis",
+		icon: <DiRedis style= {{color: "#DC382D"}} />,
+	},
+	{
+		name: "PyTorch",
+		icon: <SiPytorch style={{color: "#EE4C2C"}} />,
+	},
+	{
+		name: "TensorFlow",
+		icon: <SiTensorflow style={{color: "#FF6F00"}} />,
+	},
+	{
+		name: "Scikit-learn",
+		icon: <SiScikitlearn style= {{color: "#F7931E"}} />,
+	},
+	{
+		name: "Flask",
+		icon: <SiFlask style={{ color: "#000000"}}/>,
+	},
+	{
+		name: "JavaScript",
+		icon: <DiJavascript1 style={{ color: "#F7DF1E" }} />,
+	},
+	{
 		name: "HTML",
-		icon: <FaHtml5 />,
+		icon: <FaHtml5 style={{ color: "#E34F26"}} />,
 	},
 	{
-		name: "CSS",
-		icon: <FaCss3Alt />,
+		name: "React",
+		icon: <FaReact style={{ color: "#61DAFB" }} />,
 	},
 	{
-		name: "Javascript",
-		icon: <DiJavascript1 />,
+		name: "Docker",
+		icon: <FaDocker style={{ color: "#2496ED" }} />,
 	},
 	{
-		name: "TypeScript",
-		icon: <SiTypescript />,
+		name: "Prometheus",
+		icon: <SiPrometheus style={{color: "#E6522C"}} />,
 	},
 	{
-		name: "React Js",
-		icon: <FaReact />,
+		name: "Tableau",
+		icon: <SiTableau style={{color: "#E97627"}} />,
 	},
 	{
-		name: "Next Js",
-		icon: <SiNextdotjs />,
+		name: "Bash",
+		icon: <VscTerminalBash style= {{color: "#4EAA25"}} />,
 	},
 	{
-		name: "Vue Js",
-		icon: <RiVuejsLine />, 
-	},
-	{
-		name: "React Native",
-		icon: <TbBrandReactNative />,
-	},
-	{
-		name: "Redux",
-		icon: <SiRedux />,
-	},
-	{
-		name: "Firebase",
-		icon: <SiFirebase />,
-	},
-	{
-		name: "Tailwind",
-		icon: <SiTailwindcss />,
-	},
-	{
-		name: "Sass",
-		icon: <FaSass />,
-	},
-	{
-		name: "Styled Components",
-		icon: <SiStyledcomponents />,
-	},
-	{
-		name: "Framer Motion",
-		icon: <SiFramer />,
-	},
-	{
-		name: "Git",
-		icon: <FaGithub />,
-	},
-	{
-		name: "Figma",
-		icon: <FaFigma />,
-	},
-	{
-		name: "Photoshop",
-		icon: <SiAdobephotoshop />,
-	},
+		name: "Github",
+		icon: <FaGithub style= {{color: "#181717"}} />,
+	}
 ];

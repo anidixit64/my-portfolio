@@ -1,6 +1,6 @@
 /* Side Navbar */
 .navbar {
-	background-color: var(--section-bgd);
+	background-color: var(--gold);
 	color: var(--brick);
 	position: fixed;
 	top: 0;
@@ -77,7 +77,7 @@
 	align-items: center;
 	cursor: pointer;
 	text-decoration: none;
-	color: var(--brick);
+	color: var(--gold);
 	margin: 0 0.3rem;
 	padding: 0.7rem;
 	background-color: var(--brick);
@@ -86,7 +86,7 @@
 }
 
 .nav-link:hover {
-	background-color: var(--brick);
+	background-color: var(--green);
 }
 
 .mid-details {
@@ -104,7 +104,7 @@
 	cursor: pointer;
 	text-decoration: none;
 	padding: 1rem 0;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -113,11 +113,11 @@
 }
 
 .mid-links:hover {
-	color: var(--brick);
+	color: var(--green);
 }
 
 .mid-links:hover .mid-icon {
-	color: var(--brick);
+	color: var(--green);
 }
 
 .mid-icon {

@@ -88,34 +88,6 @@ const Contact = () => {
 					</motion.div>
 					<div className='contact-box'>
 						<motion.div
-							className='left-box'
-							initial={{ opacity: 0, y: "-50px" }}
-							whileInView={verticalLeft}>
-							<div className='contact-heading'>
-								<p>
-									I’m interested in freelance opportunities – especially
-									ambitious or large projects. However, if you have other
-									request or question, don’t hesitate to use the form
-								</p>
-							</div>
-							<div className='contact-hello'>
-								<p>Say Hello</p>
-								<Link
-									className='hello-links'
-									to='//wa.me/+2348060860565'
-									target='_blank'>
-									wa.me/pappyjay23
-								</Link>
-								<a
-									className='hello-links'
-									href='mailto:pjinadu02@gmail.com'
-									target='_blank'
-									rel='noreferrer'>
-									pjinadu02@gmail.com
-								</a>
-							</div>
-						</motion.div>
-						<motion.div
 							className='right-box'
 							initial={{ opacity: 0, y: "50px" }}
 							whileInView={verticalLeft}>
@@ -166,7 +138,7 @@ const Contact = () => {
 											id='message'
 											value={formData.message}
 											onChange={handleChange}
-											placeholder='Hi, I think I need you to work on this particular product. Reach out as soon as you can'
+											placeholder='Message me about any opportunities'
 											required></textarea>
 									</div>
 								</div>

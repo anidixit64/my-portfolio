@@ -1,3 +1,7 @@
+.skills {
+    background-color: #642e25;
+}
+
 .skills-box {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

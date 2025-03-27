@@ -31,11 +31,11 @@ const About = () => {
             className="about-content"
           >
             <p>
-              Hello! My name is Peace and I enjoy creating things that live on the internet. My interest in web development started back in 2018 when I decided to try out for my first school project — turns out putting together a simple website taught me a lot about HTML & CSS!
+              My name is Aniket Dixit and I'm senior at the University of Michigan pursuing a B.S in Computer Science and Linguistics. As long as I can remember I've had a deep passion for the language and how it can be applied to broaden our understanding of human cognition. As a computer scientist, I've gained extensive experience working with NLP and machine learning systems, relational database structures, and backend development. 
             </p>
             <br />
             <p>
-              Since then, I've had the opportunity to collaborate with some talented professionals, which has sharpened my skills and helped me grow faster. These days, I'm all about building accessible and inclusive digital products that make a difference. I also enjoy dabbling in design and illustration whenever I can.
+              I love creating and building data-driven projects, especially when they rely on innovative solutions and some deeper analysis. In my free time, I'm a dedicated polyglot, soccer player, and Civil War buff.
             </p>
           </motion.div>
 

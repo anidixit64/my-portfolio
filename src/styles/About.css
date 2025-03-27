@@ -1,3 +1,7 @@
+.about {
+    background-color: var(--brick);
+}
+
 /* Container wrapper */
 .container {
     max-width: 1200px;
@@ -39,6 +43,7 @@
     font-family: "Poppins", sans-serif;
     line-height: 1.7;
     font-size: 1rem;
+    color: var(--gold);
 }
 
 /* Image styling */

@@ -1,29 +1,4 @@
-export const ReactData = [
-	{
-		title: "Certamen",
-		desc: "NAQT based Quiz Bowl Simulator and Trivia Game",
-		tech: [
-			"Python",
-			"Flask", 
-			"PostgreSQL", 
-			"NLTK", 
-			"Javascript", 
-			"HTML/CSS",
-			"Alembic",
-		],
-		gitlink: "//github.com/anidixit64/Certamen-Quiz-Bowl-Simulator",
-		site: "//github.com/anidixit64/Certamen-Quiz-Bowl-Simulator",
-	},
-	{
-		title: "Job Scraper",
-		desc: "Lightweight real-time GUI job site scraper",
-		tech: ["Python", "pandas", "BeautifulSoup4"],
-		gitlink: "//github.com/anidixit64/Job-Scraper",
-		site: "//github.com/anidixit64/Job-Scraper",
-	},
-];
-
-export const VueData = [
+export const MLData = [
 	{
 		title: "LexicaForge",
 		desc: "Multilingual NLP toolbox geared towards language detection and text analysis",
@@ -47,10 +22,35 @@ export const VueData = [
 		site: "//github.com/aarushisi/healthnav-webdev",
 	},
 	{
-		title: "Interview Evaluator",
+		title: "Interviewer",
 		desc: "Job interview practice site with LLM and RAG powered feedback and analysis",
 		tech: ["OpenAI", "React.js", "TailwindCSS", "NLTK", "PyTorch"],
 		gitlink: "https://github.com/anidixit64/Interview-Evaluator",
 		site: "https://github.com/anidixit64/Interview-Evaluator",
+	},
+];
+
+export const FSData = [
+	{
+		title: "Certamen",
+		desc: "NAQT based Quiz Bowl Simulator and Trivia Game",
+		tech: [
+			"Python",
+			"Flask", 
+			"PostgreSQL", 
+			"NLTK", 
+			"Javascript", 
+			"HTML/CSS",
+			"Alembic",
+		],
+		gitlink: "//github.com/anidixit64/Certamen-Quiz-Bowl-Simulator",
+		site: "//github.com/anidixit64/Certamen-Quiz-Bowl-Simulator",
+	},
+	{
+		title: "Job Scraper",
+		desc: "Lightweight real-time GUI job site scraper",
+		tech: ["Python", "pandas", "BeautifulSoup4"],
+		gitlink: "//github.com/anidixit64/Job-Scraper",
+		site: "//github.com/anidixit64/Job-Scraper",
 	},
 ];

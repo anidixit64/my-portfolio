@@ -51,7 +51,7 @@
 	max-width: 100%;
 }
 
-.hero-contact {
+.hero-download {
 	text-decoration: none;
 	color: var(--beige);
   	font-size: 1rem;
@@ -73,7 +73,7 @@
 	cursor: pointer;
 }
 
-.hero-contact::after {
+.hero-download::after {
 	background-color: var(--brick);
 	content: "";
 	display: block;
@@ -89,11 +89,11 @@
 	z-index: -1;
 }
 
-.hero-contact:hover::after {
+.hero-download:hover::after {
 	transform: translate(0, 0);
 }
 
-.hero-contact:hover {
+.hero-download:hover {
 	color: var(--beige);
 	will-change: transform;
 }
@@ -139,10 +139,11 @@
 	position: fixed;
 	bottom: 1rem;
 	right: 1rem;
+	color: var(--beige);
 }
 
 .to-top-icon:hover {
-	background-color: var(--brick);
+	background-color: var(--gold);
 }
 
 .show {

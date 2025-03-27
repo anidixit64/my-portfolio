@@ -1,7 +1,13 @@
+.contact {
+	background: #642e25;
+}
+
 .contact-box {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 2rem; /* Optional: spacing under the heading */
 }
 
 .contact-heading {
@@ -25,7 +31,7 @@
 }
 
 .hello-links {
-	color: var(--brick);
+	color: var(--gold);
 	margin: 0.5rem 0;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
@@ -39,7 +45,7 @@
 .right-box {
 	width: 90%;
 	margin: 0 auto;
-	color: var(--brick);
+	color: var(--gold);
 	font-size: 80%;
 }
 
@@ -73,10 +79,10 @@ textarea {
 	background-color: transparent !important;
 	border: 0;
 	outline: none;
-	border-bottom: 1px solid var(--brick);
+	border-bottom: 1px solid var(--gold);
 	padding-bottom: 0.5rem;
 	word-wrap: break-word;
-	color: var(--brick);
+	color: var(--gold);
 }
 
 input:-webkit-autofill,
@@ -99,12 +105,59 @@ textarea:-webkit-autofill:focus {
 }
 
 .form-mid {
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 }
 
 .form-btn {
 	display: flex;
 	justify-content: center;
+}
+
+.hero-contact {
+	text-decoration: none;
+	color: var(--beige);
+  	font-size: 1rem;
+	font-weight: 500;
+	letter-spacing: 3px;
+	padding: 1rem 2rem;
+	border: 3px solid var(--gold);
+	background-color: transparent;
+	width: fit-content;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.4s transform ease-in-out;
+	will-change: transform;
+	display: flex;
+	font-family: 'Cinzel', serif;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+}
+
+.hero-contact::after {
+	background-color: var(--green);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: translate(-100%, 0);
+	transform-origin: top right;
+	transition: 0.8s transform ease-out;
+	will-change: transform;
+	z-index: -1;
+}
+
+.hero-contact:hover::after {
+	transform: translate(0, 0);
+}
+
+.hero-contact:hover {
+	color: var(--beige);
+	will-change: transform;
 }
 
 .Toastify__toast {

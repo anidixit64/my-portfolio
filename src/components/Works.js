@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Works.css";
 import { motion } from "framer-motion";
-import { ReactData, ReactNativeData, VueData } from "../data/WorkData";
+import { MLData, FSData } from "../data/WorkData";
 import WorkCard from "./WorkCard";
 
 const Works = () => {
@@ -15,8 +15,8 @@ const Works = () => {
 	};
 
 	const tabData = [
-		{ id: "react", label: "React", data: ReactData },
-		{ id: "vue", label: "Vue", data: VueData },
+		{ id: "react", label: "ML/AI", data: MLData },
+		{ id: "vue", label: "Backend", data: FSData },
 	];
 
 	return (
@@ -27,7 +27,6 @@ const Works = () => {
 					whileInView={fade}
 					viewport={{ once: true }}
 					className='heading'>
-					<p className='heading-sub-text'>I build real value</p>
 					<p className='heading-text'>Works</p>
 				</motion.div>
 

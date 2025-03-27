@@ -28,7 +28,7 @@
 
 /* Icon styling */
 .skill-icon {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(2.5rem, 4vw, 4rem);
     margin-bottom: 0.5rem;
     color: var(--gold)
 }

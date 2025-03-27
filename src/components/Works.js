@@ -17,7 +17,6 @@ const Works = () => {
 	const tabData = [
 		{ id: "react", label: "React", data: ReactData },
 		{ id: "vue", label: "Vue", data: VueData },
-		{ id: "react-native", label: "React Native", data: ReactNativeData },
 	];
 
 	return (

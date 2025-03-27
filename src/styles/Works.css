@@ -15,7 +15,7 @@
 }
 
 .works-card {
-	background-color: var(--brick);
+	background-color: var(--gold);
 	color: var(--brick);
 	border-radius: 5px;
 	position: relative;
@@ -37,7 +37,7 @@
 }
 
 .works-card:hover .work-title {
-	color: var(--brick);
+	color: var(--green);
 }
 
 .top-work {
@@ -87,7 +87,7 @@
 }
 .work-git:hover,
 .work-link:hover {
-	color: var(--brick);
+	color: var(--green);
 }
 
 .bottom-work {
@@ -113,7 +113,7 @@
   .tab {
 	padding: 0.5rem 1rem;
 	margin: 0 0.5rem;
-	background-color: var(--brick);
+	background-color: var(--gold);
 	color: var(--brick);
 	border: none;
 	border-radius: 5px;
@@ -124,12 +124,12 @@
   }
   
   .tab:hover {
-	background-color: var(--brick);
+	background-color: var(--green);
 	color: white;
   }
   
   .tab.active {
-	background-color: var(--brick);
+	background-color: var(--green);
 	color: white;
   }
   

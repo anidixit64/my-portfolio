@@ -4,6 +4,7 @@ import Contact from './Contact';
 import HeroSection from './HeroSection';
 import Skills from './Skills';
 import Works from './Works';
+import Writings from './Writings';
 
 const Main = ({nav, handleNav, closeNav}) => {
   return(
@@ -12,6 +13,7 @@ const Main = ({nav, handleNav, closeNav}) => {
         <About />
         <Skills />
         <Works />
+        <Writings />
         <Contact />
     </div>
   )

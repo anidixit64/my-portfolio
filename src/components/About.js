@@ -31,11 +31,11 @@ const About = () => {
             className="about-content"
           >
             <p>
-              My name is Aniket Dixit and I'm senior at the University of Michigan pursuing a B.S in Computer Science and Linguistics. As long as I can remember I've had a deep passion for the language and how it can be applied to broaden our understanding of human cognition. As a computer scientist, I've gained extensive experience working with NLP and machine learning systems, relational database structures, and backend development. 
+              My name is Aniket Dixit and I'm senior at the University of Michigan pursuing a B.S in Computer Science and Linguistics. I've always had a deep passion for language, cognition, and it's impact on society, which still fuels my work in natural language processing, machine learning, and backend development.
             </p>
             <br />
             <p>
-              I love creating and building data-driven projects, especially when they rely on innovative solutions and some deeper analysis. In my free time, I'm a dedicated polyglot, soccer player, and Civil War buff.
+            I love building data-driven systems that reveal deeper patterns in language and communication. From NLP pipelines to scalable APIs, my projects sit at the crossroads of linguistics, analysis, and clean, efficient engineering. In my free time, I'm a dedicated polyglot, soccer player, and Civil War buff.
             </p>
           </motion.div>
 

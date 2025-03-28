@@ -106,3 +106,36 @@ body {
     text-shadow: 0 0 5px rgba(198, 147, 75, 0.2);
   }
 }
+
+/* Container styles */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Media queries for container */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Ensure all sections take full width */
+.about,
+.skills,
+.services,
+.works,
+.contact {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}

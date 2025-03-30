@@ -2,22 +2,22 @@
 
 /* Global Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
   font-family: 'Cinzel', serif;
 }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 8px;
+	width: 6px;
+	height: 8px;
 }
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brick);
-  border-radius: 100vh;
+	border-radius: 100vh;
 }
 
 /* Root Color Palette */
@@ -39,18 +39,18 @@ body {
 /* Toast Z-Index */
 .Toastify__container,
 .Toastify__toast-container {
-  z-index: 9999 !important;
+    z-index: 9999 !important;
 }
 
 /* Loader Background */
 .loader {
   background-color: var(--deep-grey);
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 /* Roman Name Styling */
@@ -101,15 +101,15 @@ body {
   }
   50% {
     text-shadow: 0 0 12px rgba(198, 147, 75, 0.7);
-  }
-  100% {
+	}
+	100% {
     text-shadow: 0 0 5px rgba(198, 147, 75, 0.2);
   }
 }
 
 /* Container styles */
 .container {
-  width: 100%;
+	width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -118,13 +118,13 @@ body {
 
 /* Media queries for container */
 @media screen and (max-width: 768px) {
-  .container {
+	.container {
     padding: 0 0.5rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .container {
+	.container {
     padding: 0 0.5rem;
   }
 }

@@ -1,55 +1,63 @@
 import React from 'react';
-import "../styles/About.css";
-import { motion } from "framer-motion";
-import ProfileImg from '../images/self.jpg';
+import '../styles/Writings.css';
+import { motion } from 'framer-motion';
 
-const About = () => {  
+const writings = [
+  {
+    title: 'The Polyglot’s Dilemma',
+    description: 'A reflective essay on the paradoxes of multilingualism in modern digital life.',
+    link: 'https://example.com/polyglot-dilemma'
+  },
+  {
+    title: 'Syntax of the Stars',
+    description: 'Analyzing the metaphorical syntax of constellation names across ancient languages.',
+    link: 'https://example.com/syntax-stars'
+  },
+  {
+    title: 'Lost Tongues and Hidden Codes',
+    description: 'On cryptographic thought and the evolution of dead languages.',
+    link: 'https://example.com/lost-tongues'
+  }
+];
 
-  const horizontal = {
-    x: 0,
+const Writings = () => {
+  const fadeIn = {
     opacity: 1,
-    transition: { type: 'spring', duration: 2, bounce: 0.3 }
+    transition: {
+      duration: 1.4,
+    },
   };
 
   return (
-    <div className="about" id="about">
-      <div className="container">
+    <div className='writings' id='writings'>
+      <div className='container'>
         <motion.div
-          initial={{ x: '-100%', opacity: 0 }}
-          whileInView={horizontal}
+          initial={{ opacity: 0 }}
+          whileInView={fadeIn}
           viewport={{ once: true }}
-          className="heading"
+          className='heading'
         >
-          <p className="heading-sub-text">Who I am</p>
-          <p className="heading-text">About Me</p>
+          <p className='heading-sub-text'>What I've Written</p>
+          <p className='heading-text'>Writings</p>
         </motion.div>
 
-        <div className="split-about">
-          <motion.div
-            initial={{ x: '-100%', opacity: 0 }}
-            whileInView={horizontal}
-            className="about-content"
-          >
-            <p>
-              My name is Aniket Dixit and I'm senior at the University of Michigan pursuing a B.S in Computer Science and Linguistics. As long as I can remember I've had a deep passion for the language and how it can be applied to broaden our understanding of human cognition. As a computer scientist, I've gained extensive experience working with NLP and machine learning systems, relational database structures, and backend development. 
-            </p>
-            <br />
-            <p>
-              I love creating and building data-driven projects, especially when they rely on innovative solutions and some deeper analysis. In my free time, I'm a dedicated polyglot, soccer player, and Civil War buff.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ x: '100%', opacity: 0 }}
-            whileInView={horizontal}
-            className="about-img"
-          >
-            <img src={ProfileImg} alt="Profile" />
-          </motion.div>
-        </div>
+        <motion.div className='writings-box' initial={{ opacity: 0 }} whileInView={fadeIn}>
+          {writings.map((writing, index) => (
+            <a
+              key={index}
+              href={writing.link}
+              target='_blank'
+              rel='noreferrer'
+              className='writing-card'
+            >
+              <div className='writing-title'>{writing.title}</div>
+              <div className='writing-desc'>{writing.description}</div>
+            </a>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
 };
 
-export default About;
+export default Writings;

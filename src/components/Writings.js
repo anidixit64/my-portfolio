@@ -1,63 +1,64 @@
-import React from 'react';
-import '../styles/Writings.css';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import "../styles/Works.css";
+import { motion } from "framer-motion";
+import { MLData, FSData } from "../data/WorkData";
+import WorkCard from "./WorkCard";
 
-const writings = [
-  {
-    title: 'The Polyglot’s Dilemma',
-    description: 'A reflective essay on the paradoxes of multilingualism in modern digital life.',
-    link: 'https://example.com/polyglot-dilemma'
-  },
-  {
-    title: 'Syntax of the Stars',
-    description: 'Analyzing the metaphorical syntax of constellation names across ancient languages.',
-    link: 'https://example.com/syntax-stars'
-  },
-  {
-    title: 'Lost Tongues and Hidden Codes',
-    description: 'On cryptographic thought and the evolution of dead languages.',
-    link: 'https://example.com/lost-tongues'
-  }
-];
+const Works = () => {
+	const [activeTab, setActiveTab] = useState("react");
 
-const Writings = () => {
-  const fadeIn = {
-    opacity: 1,
-    transition: {
-      duration: 1.4,
-    },
-  };
+	const fade = {
+		opacity: 1,
+		transition: {
+			duration: 1.4,
+		},
+	};
 
-  return (
-    <div className='writings' id='writings'>
-      <div className='container'>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={fadeIn}
-          viewport={{ once: true }}
-          className='heading'
-        >
-          <p className='heading-sub-text'>What I've Written</p>
-          <p className='heading-text'>Writings</p>
-        </motion.div>
+	const tabData = [
+		{ id: "react", label: "ML/AI", data: MLData },
+		{ id: "vue", label: "Backend", data: FSData },
+	];
 
-        <motion.div className='writings-box' initial={{ opacity: 0 }} whileInView={fadeIn}>
-          {writings.map((writing, index) => (
-            <a
-              key={index}
-              href={writing.link}
-              target='_blank'
-              rel='noreferrer'
-              className='writing-card'
-            >
-              <div className='writing-title'>{writing.title}</div>
-              <div className='writing-desc'>{writing.description}</div>
-            </a>
-          ))}
-        </motion.div>
-      </div>
-    </div>
-  );
+	return (
+		<div className='works' id='works'>
+			<div className='container'>
+				<motion.div
+					initial={{ opacity: 0 }}
+					whileInView={fade}
+					viewport={{ once: true }}
+					className='heading'>
+					<p className='heading-text'>Works</p>
+				</motion.div>
+
+				<div className='tabs'>
+					{tabData.map((tab) => (
+						<button
+							key={tab.id}
+							className={`tab ${activeTab === tab.id ? "active" : ""}`}
+							onClick={() => setActiveTab(tab.id)}>
+							{tab.label}
+						</button>
+					))}
+				</div>
+
+				<motion.div
+					className='works-box'
+					initial={{ opacity: 0 }}
+					whileInView={fade}>
+					{tabData.map(
+						(tab) =>
+							activeTab === tab.id && (
+								<React.Fragment key={tab.id}>
+									{tab.data.map((w, index) => (
+										<WorkCard w={w} tabId={tab.id} key={index} />
+									))}
+								</React.Fragment>
+							)
+					)}
+				</motion.div>
+			</div>
+		</div>
+	);
 };
 
-export default Writings;
+export default Works;

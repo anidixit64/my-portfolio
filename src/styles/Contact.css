@@ -1,5 +1,5 @@
 .contact {
-	background: #642e25;
+	background: var(--brick);
 }
 
 .contact-box {

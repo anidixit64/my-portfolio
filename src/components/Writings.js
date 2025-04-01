@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../styles/Works.css";
+import "../styles/Writings.css";
 import { motion } from "framer-motion";
-import { MLData, FSData } from "../data/WorkData";
-import WorkCard from "./WorkCard";
+import { MLData, FSData } from "../data/WritingData";
+import WritingCard from "./WritingCard";
 
 const Works = () => {
 	const [activeTab, setActiveTab] = useState("react");
@@ -15,8 +15,8 @@ const Works = () => {
 	};
 
 	const tabData = [
-		{ id: "react", label: "ML/AI", data: MLData },
-		{ id: "vue", label: "Backend", data: FSData },
+		{ id: "react", label: "Publications", data: MLData },
+		{ id: "vue", label: "Class Papers", data: FSData },
 	];
 
 	return (
@@ -50,7 +50,7 @@ const Works = () => {
 							activeTab === tab.id && (
 								<React.Fragment key={tab.id}>
 									{tab.data.map((w, index) => (
-										<WorkCard w={w} tabId={tab.id} key={index} />
+										<WritingCard w={w} tabId={tab.id} key={index} />
 									))}
 								</React.Fragment>
 							)

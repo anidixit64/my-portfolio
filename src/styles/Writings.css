@@ -96,11 +96,13 @@
 	gap: 5px;
 	justify-content: center;
 	align-items: center;
+	margin-top: -10px;
 }
 
 .bottom-work small {
 	margin: 0 0.5rem;
 	font-size: 60%;
+	margin-bottom: 20px;
 }
 
 /* New styles for tabs */

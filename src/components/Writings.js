@@ -20,7 +20,7 @@ const Works = () => {
 	];
 
 	return (
-		<div className='works' id='works'>
+		<div className='writings' id='works'>
 			<div className='container'>
 				<motion.div
 					initial={{ opacity: 0 }}

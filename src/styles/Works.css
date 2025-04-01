@@ -34,10 +34,7 @@
 
 .works-card:hover {
 	transform: translateY(-7px);
-}
-
-.works-card:hover .work-title {
-	color: var(--green);
+	border: 3px solid var(--green);
 }
 
 .top-work {
@@ -87,7 +84,7 @@
 }
 .work-git:hover,
 .work-link:hover {
-	color: var(--green);
+	color: var(--beige);
 }
 
 .bottom-work {
@@ -101,6 +98,14 @@
 .bottom-work small {
 	margin: 0 0.5rem;
 	font-size: 60%;
+}
+
+.works-card:hover .work-title,
+.works-card:hover .work-folder,
+.works-card:hover .work-desc,
+.works-card:hover .bottom-work
+{
+	color: var(--green);
 }
 
 /* New styles for tabs */
@@ -124,12 +129,12 @@
   }
   
   .tab:hover {
-	background-color: var(--green);
+	background-color: var(--beige);
 	color: white;
   }
   
   .tab.active {
-	background-color: var(--green);
+	background-color: var(--beige);
 	color: white;
   }
   

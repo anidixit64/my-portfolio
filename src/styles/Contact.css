@@ -56,6 +56,18 @@
 	margin-bottom: 4rem;
 }
 
+.form-mid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+.message {
+	width: 100%;
+	max-width: 2000px; /* or however wide you'd like */
+}
+
 .name,
 .email {
 	width: 40%;
@@ -80,9 +92,11 @@ textarea {
 	border: 0;
 	outline: none;
 	border-bottom: 1px solid var(--gold);
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.25rem;
+	margin-bottom: 0.25rem;
 	word-wrap: break-word;
-	color: var(--gold);
+	color: var(--beige);
+	resize: none;
 }
 
 input:-webkit-autofill,
@@ -102,10 +116,6 @@ textarea:-webkit-autofill:focus {
 	box-shadow: 0 0 0 1000px transparent inset !important;
 	-webkit-text-fill-color: white !important;
 	transition: background-color 5000s ease-in-out 0s;
-}
-
-.form-mid {
-	margin-bottom: 3rem;
 }
 
 .form-btn {

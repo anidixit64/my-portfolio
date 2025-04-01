@@ -27,7 +27,7 @@ const Works = () => {
 					whileInView={fade}
 					viewport={{ once: true }}
 					className='heading'>
-					<p className='heading-text'>Works</p>
+					<p className='heading-text'>Writings</p>
 				</motion.div>
 
 				<div className='tabs'>

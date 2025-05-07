@@ -11,6 +11,11 @@ export const MLData = [
 		publication: "The Concord Review",
 		site: "//docs.google.com/document/d/16HKDejmt2nrivP3nfx3ZBa6n-cxgqo4NbK45Zd6dIIE/preview",
 	},
+	{
+		title: "Multimodal Mock Interview Analysis and Generation using LLMs and Prosodic Featuress",
+		desc: "Project Description for the Pro Interview Bot app built in Introduction to NLP at UMich",
+		site: "//docs.google.com/document/d/16HKDejmt2nrivP3nfx3ZBa6n-cxgqo4NbK45Zd6dIIE/preview",
+	},
 ];
 
 export const FSData = [

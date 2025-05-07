@@ -17,7 +17,7 @@ export const FSData = [
 	{
 		title: "Multimodal Mock Interview Analysis and Generation using LLMs and Prosodic Features",
 		desc: 'Final project analysis and presentation of the Pro Interview Bot ',
-		site: "https://anidixit.netlify.app/public/publications/487_Final_Report.pdf",
+		site: "https://drive.google.com/file/d/1fbEAUHyCMNjQQvcNQmPUbRtxwyZfQx3A/view?usp=sharing",
 	},
 	{
 		title: "Truth, Justice, and the Soviet Way",

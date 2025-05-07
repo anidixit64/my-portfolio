@@ -11,14 +11,14 @@ export const MLData = [
 		publication: "The Concord Review",
 		site: "//docs.google.com/document/d/16HKDejmt2nrivP3nfx3ZBa6n-cxgqo4NbK45Zd6dIIE/preview",
 	},
-	{
-		title: "Multimodal Mock Interview Analysis and Generation using LLMs and Prosodic Featuress",
-		desc: "Project Description for the Pro Interview Bot app built in Introduction to NLP at UMich",
-		site: "https://anidixit.netlify.app/publications/487_Final_Report.pdf",
-	},
 ];
 
 export const FSData = [
+	{
+		title: "Multimodal Mock Interview Analysis and Generation using LLMs and Prosodic Features",
+		desc: 'Final project analysis and presentation of the Pro Interview Bot '
+		site: "https://anidixit.netlify.app/public/publications/487_Final_Report.pdf",
+	},
 	{
 		title: "Truth, Justice, and the Soviet Way",
 		desc: "On the social & polticial criticism in Mark Miller's portrayal of the USSR in the \"Superman; Red Son\" comic book.",

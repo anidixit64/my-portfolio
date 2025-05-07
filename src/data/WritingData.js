@@ -16,7 +16,7 @@ export const MLData = [
 export const FSData = [
 	{
 		title: "Multimodal Mock Interview Analysis and Generation using LLMs and Prosodic Features",
-		desc: 'Final project analysis and presentation of the Pro Interview Bot '
+		desc: 'Final project analysis and presentation of the Pro Interview Bot ',
 		site: "https://anidixit.netlify.app/public/publications/487_Final_Report.pdf",
 	},
 	{
